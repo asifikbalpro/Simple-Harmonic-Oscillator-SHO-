@@ -1,0 +1,280 @@
+\chapterimage{head2.png} % Chapter heading image
+%\usepackage{physics}
+
+\newpage
+\section{Simple Harmonic Oscillator (SHO)}
+\subsection{What is SHO?}
+	Start with a spring resting on a horizontal, frictionless (for now) surface. Fix one end to an unmovable object and the other to a movable object. Start the system off in an equilibrium state — nothing moving and the spring at its relaxed length.
+
+	Now, disturb the equilibrium. Pull or push the mass parallel to the axis of the spring and stand back. You know what happens next. The system will oscillate side to side (or back and forth) under the restoring force of the spring. (A restoring force acts in the direction opposite the displacement from the equilibrium position.) If the spring obeys Hooke's law (force is proportional to extension) then the device is called a simple harmonic oscillator (often abbreviated sho) and the way it moves is called simple harmonic motion (often abbreviated shm).
+
+	A simple harmonic oscillator is an oscillator that is neither driven nor damped. It consists of a mass m, which experiences a single force F, which pulls the mass in the direction of the point x = 0 and depends only on the mass's position x and a constant k. Balance of forces (Newton's second law) for the system.
+	
+
+	\begin{equation}
+	F=ma=m\frac{d^2x}{dt^2} = m\ddot{x} = -kx
+	\end{equation}
+	Solving this differential equation, we find that the motion is described by the function
+	\begin{equation}
+	x(t)= A \cos(\omega t + \varphi)
+	\end{equation}
+	\begin{equation}
+	where \ \ \omega = \sqrt{\frac{k}{m}}
+	\end{equation}
+	
+	As long as the system has no energy loss, the mass continues to oscillate. Thus simple harmonic motion is a type of periodic motion. Note if the real space and phase space diagram are not co-linear, the phase space motion becomes elliptical. The area enclosed depends on the amplitude and the maximum momentum.
+	
+	
+	
+		
+\subsubsection{Example}
+
+
+
+
+
+
+\section{mass spring system}
+
+	mass = m \\
+	distance form equilibrium x \\
+	spring constant k \\
+	Hook's law [F = -kx] \\
+	force is proportional to the displacement \\
+	\\
+	unit 
+	[F] = newton = $MLt^{-2}$ \ \ \ \ | m = mass 
+	
+	[x] = meter  = L \ \ \ \ \ \ \ \ \ \ | L = length 
+	
+	[x] = $\frac{MLt^{-2}}{L} = ML^{-2} $ | t = time
+	
+	newton law, [ F = ma = m$\ddot{x}$]\\
+	since no offer force is action on the spring
+	
+	[$m\ddot{x}$ = -kx] this is the equation of motion(EOM) of a mass spring system.\\
+	
+	
+
+
+
+\subsection{equation of motion (EOM)}
+	
+
+
+\subsection{solution of EOM}
+
+	\begin{align}
+		m\ddot{x} = -kx \\
+		=> \ddot{x} = -\frac{k}{m}x \\
+		=>\frac{d^2x}{dt^2} = -\omega^2 x\\
+	\end{align}
+	
+	Assume the solution is, $x(t) = Ae^{-i\omega t}+Be^{-i\omega t} = x_1(t)+x_2(t)$ --->(trial) \\
+	
+	\textbf{Checking for $x_1(t)$}
+	1.
+	\begin{align}
+		\frac{d^2x_1(t)}{dt^2} \\
+		= A\frac{d^2}{dt^2}e^{i\omega t} \\
+		= A\frac{d}{dt}\big(\frac{de^{i\omega t}}{dt}(i\omega)\big) \\
+		= A (i \omega)\frac{d}{dt}e^{i\omega t} \\
+		= A (i\omega) e^{i\omega t} (i\omega) \\
+		= A (i\omega)^2 e^{i\omega t} \\
+		= i^2\omega^2 Ae^{i\omega t} \\
+		= - \omega^2 x_1(t)  \\
+	\end{align}
+	
+	\textbf{Checking for $x_2(t)$}
+	2.
+	\begin{align}
+		\frac{d^2 x_2(t)}{dt^2} \\
+		= (-i\omega)^2 Be^{-i\omega t} \\
+		= (-i\omega)^2 x_2(t) \\
+		= (-\omega)^2 x_2(t) \\
+	\end{align}
+	constant A and B is determined form boundary condition.
+	
+
+
+\subsection{graph and calculation  of position}
+
+
+
+
+\subsection{velocity}
+
+
+
+\subsection{energy}
+
+
+
+\section{simple pendulum}
+
+
+
+\subsection{equation of motion (EOM)}
+
+
+
+\subsection{solution of EOM}
+
+
+
+\subsection{graph and calculation of position}
+
+
+
+\subsection{velocity}
+
+
+
+\subsection{energy}
+
+
+
+\section{lagrangian for mass-spring and pendulum}
+
+	\textbf{Lagrangian}	\\
+	1.
+	\begin{align}
+		L = T - V \ \ (Definition)\\
+		T = \ Kinetic \ energy \\
+		V = \ potential \ energy \\
+		and \ L = L(q,\dot{q}, t) \\
+		q = \ generalized \ coordinate \\
+		\dot{q} = \ generalized \ velocity \\
+		t = \ time \\ 
+		equation \ of \ motion \ or \ euler \ - \ lagrage \ EOM \\
+		\frac{d}{dt}\bigg(\frac{\partial L}{\partial \dot{q}}\bigg) - \frac{\partial L}{\partial q} = 0 \\
+	\end{align}
+	
+	\textbf{Lagrangian apporch for mass spring system} \\
+	1.
+	\begin{align}
+		T = \frac{1}{2}mx^2 \\
+		V = \frac{1}{2}kx^2 \\
+		L = T - V \\
+		= \frac{1}{2}m\dot{x}^2 - \frac{1}{2}kx^2 \\
+		here: \\
+		q= x \\
+		q = \dot{x} \\
+		\frac{\partial L}{\partial \dot{x}} = m\dot{x} \\
+		EOM:\\
+		\frac{d}{dt}\bigg(\frac{\partial L}{\partial \dot{x}}\bigg) = 0 \\
+		=>\frac{d}{dt}(mx)+kx = 0 \\
+		=>m\ddot{x}+kx \\
+		=>\ddot{x}+\frac{k}{m}x = 0 \\
+		=>\ddot{x}+\omega^2x = 0 \ ; \ \omega^2 = \frac{k}{m}
+	\end{align}
+	
+	
+	
+	
+	
+	
+	\textbf{Lagrangian}
+	\begin{equation}
+		Lagrangian = L = KE - PE = T - V
+	\end{equation}
+	KE and T is kinetic energy \\
+	PE and V =  potential energy \\
+	Equation Of motion can be determined by: \\
+	Where X and X represented velocity and potion in generalized coordinate.\\
+	let $v = x$ and $y = x$ \\
+	\begin{equation}
+	KE = \frac{1}{2}m\dot{x}^2 \ \ \ \ \ \ PE = mgx
+	\end{equation}
+	\begin{equation}
+		L = KE - PE = \frac{1}{2}m\dot{x}^2 - mgx
+	\end{equation}
+	\begin{equation}
+		\frac{\partial L}{\partial x} = 0 - mg
+	\end{equation}
+	\begin{equation}
+	\frac{\partial L}{\partial \dot{x}} = m\dot{x} - 0
+	\end{equation}
+	\begin{equation}
+		\frac{d}{dt}\bigg(\frac{\partial L}{\partial x}\bigg) = \frac{d}{dt}(m\dot{x}) = m \ddot{x}
+	\end{equation}
+	object on free fall...
+	\begin{align}
+		\frac{d}{dt}\bigg(\frac{\partial L}{\partial \dot{x}}\bigg) - \frac{\partial L}{\partial x} = 0 \\
+		m\ddot{x} - (-mg) = 0 \\
+		m\ddot{x}+mg = 0 \\
+		\ddot{x} + g = 0 \\
+		\ddot{x } = - g \\
+		 a = - 9.8 m/s^2
+	\end{align}
+	
+	
+	
+	
+	
+	
+	\textbf{Simple pendulum} \\
+	(1) Bob = small ball \\
+	(2) thread or string of length l \\
+	vertical line is the equilibrium: $h = l-l\cos\theta$
+	potential energy, $v = mgh$ \\
+	$v = mgh(1-\cos\theta)$ \\
+	kinetic energy, $t = \frac{1}{2}m\dot{x}^2$ \\
+	Lagrangian $L=T-V=\frac{1}{2}m\dot{x}^2-mgh(1-\cos\theta)$ \\
+	variable --->x and $\theta$ \\
+	$L=\frac{1}{2}m(l\theta)^2 - mgh(1-\cos\theta); \ variable \  is \ only \ \theta$ \\
+	$\frac{d}{dt}\bigg(\frac{\partial L}{\partial\theta}\bigg) - \frac{\partial L}{\partial\theta} = 0\  EL \ equation $\\
+	EL equation gives, \\
+	\begin{align}
+		\frac{d}{dt}(ml^2\dot{\theta})- (mgl\sin\theta) = 0 \\
+		=>ml^2\ddot{\theta} + mgl\sin\theta = 0 \\
+		=>\ddot{\theta} + \frac{g}{l}\sin\theta = 0 \\
+		=>\ddot{\theta} + \frac{g}{l}\theta = 0 ;\ for \ small \ \theta \\
+		=> \ddot{\theta} + \omega^2\theta = 0 ; \ \omega^2=\frac{g}{l} \\
+	\end{align}
+	Exactly like spring system \\ \\
+	solution. \\
+	\begin{align}
+		\theta(t) = Ae^{-i\omega t} \\
+		= A[\cos(\omega t)- i \sin(\omega t)] \\
+		Taking \ only \ real \ port. \\
+		\theta t = A\cos(\omega t) \\
+		angular \ frequency ,\ \omega = \sqrt{\frac{g}{l}} \\
+		\omega = \frac{2\pi}{T} = 2\pi t \\
+		\frac{2\pi}{T}\sqrt{\frac{g}{l}} \\
+		T = 2\pi\sqrt{\frac{l}{g}} \\
+		=> T^2 = 4\pi^2\frac{l}{g} \\
+		=> g = \frac{4\pi^2l}{T^2} \\
+	\end{align}
+	simply by meaning l and T we can find gravitational acceleration g!! and. \\
+	$g= 9.8ms^{-2}$ \\
+	$= 9.8m/s^2$ \\
+	$= 32f/s^2$ \\
+	
+	\textbf{Newtonian approach(using force)} \\
+	Lagrangian approach using energy better and general and suitable for complex system.\\
+	\begin{align}
+		F = ma \\
+		ma = -Fg \sin\theta \\
+		=>ma = -mg\sin\theta \\
+		=>\ddot{\theta} = - \frac{g}{l}\theta \\
+		=>\ddot{\theta}+\frac{\theta}{l}\theta = 0 \\
+		=>\ddot{\theta}+\omega^2\theta=0 \\
+		Solution\ \theta(t) = Ae^{-i\omega t} \\
+		=> A \cos(\omega t) \\
+	\end{align}
+	
+	
+	
+
+
+
+\subsection{EOM from lagrangian}
+
+
+
+
+
+
+
+
